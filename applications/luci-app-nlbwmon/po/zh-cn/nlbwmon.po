@@ -1,15 +1,5 @@
-#
-# Yangfl <mmyangfl@gmail.com>, 2018.
-#
 msgid ""
-msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
-"Last-Translator: Yangfl <mmyangfl@gmail.com>\n"
-"Language-Team:  <debian-l10n-chinese@lists.debian.org>\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"PO-Revision-Date: 2018-08-07 19:48+0800\n"
-"X-Generator: Gtranslator 2.91.7\n"
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
 msgid "%d IPv4-only hosts"
 msgstr "%d 台仅 IPv4 主机"

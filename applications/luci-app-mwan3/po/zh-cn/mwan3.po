@@ -151,18 +151,25 @@ msgstr "目标端口"
 msgid "Detail"
 msgstr "详细"
 
-#: applications/luci-app-mwan3/luasrc/view/mwan/status_detail.htm:12
-#: applications/luci-app-mwan3/luasrc/view/mwan/status_diagnostics.htm:12
-#: applications/luci-app-mwan3/luasrc/view/mwan/status_interface.htm:12
-#: applications/luci-app-mwan3/luasrc/view/mwan/status_troubleshooting.htm:12
-msgid "Diagnostics"
-msgstr "诊断"
-
 #: applications/luci-app-mwan3/luasrc/view/mwan/overview_status_interface.htm:50
 msgid "Disabled"
 msgstr "已禁用"
 
-#: applications/luci-app-mwan3/luasrc/model/cbi/mwan/interfaceconfig.lua:224
+msgid "MWAN3 Helper"
+msgstr "分流助手"
+
+msgid "IPSet Lists"
+msgstr "IPSet列表"
+
+msgid "shunt"
+msgstr "分流"
+
+msgid "Enable GFW IPSet"
+msgstr "启用"
+
+msgid "MWAN3 Helper generate IPSets"
+msgstr "对中国地址段和各大ISP运营商的 IPSet 地址段分流，并解决国外域名的污染问题"
+
 msgid ""
 "Downed interface will be deemed up after this many successful ping tests"
 msgstr "当 Ping 成功次数达到这个数值后，已经被认为离线的接口将会重新上线"
@@ -180,10 +187,11 @@ msgstr "已启用"
 msgid ""
 "Enables firewall rule logging (global mwan3 logging must also be enabled)"
 msgstr ""
+"启用全局防火墙日志记录 (还必须启用全局mwan3日志记录)"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:23
 msgid "Enables global firewall logging"
-msgstr ""
+msgstr "启用全局防火墙日志记录"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:16
 msgid "Enter value in hex, starting with <code>0x</code>"
@@ -207,7 +215,7 @@ msgstr "故障检测间隔"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:29
 msgid "Firewall loglevel"
-msgstr ""
+msgstr "防火墙日志级别"
 
 #: applications/luci-app-mwan3/luasrc/model/cbi/mwan/globalsconfig.lua:15
 msgid "Firewall mask"

@@ -16,7 +16,7 @@ function secondsToString(time) {
 	return String.format("%sh:%sm:%ss", hrs, mnts, seconds);
 }
 
-XHR.poll(-1, '<%=luci.dispatcher.build_url("admin", "status", "mwan", "interface_status")%>', null,
+XHR.poll(1, '<%=luci.dispatcher.build_url("admin", "status", "mwan", "interface_status")%>', null,
 		function(x, status)
 		{
 			var statusDiv = document.getElementById('mwan_status_text');

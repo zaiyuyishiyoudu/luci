@@ -55,9 +55,11 @@ function index()
 	entry({"admin", "network", "mwan", "rule"},
 		arcombine(cbi("mwan/rule"), cbi("mwan/ruleconfig")),
 		_("Rules"), 40).leaf = true
+	entry({"admin", "network", "mwan", "client"},cbi("mwan/client"),_("shunt"),50).leaf = true
 	entry({"admin", "network", "mwan", "notify"},
 		form("mwan/notify"),
-		_("Notification"), 50).leaf = true
+		_("Notification"), 60).leaf = true
+	entry({"admin","network","mwan","status"},call("act_status")).leaf=true
 end
 
 function mwan_Status()
@@ -317,4 +319,11 @@ function troubleshootingData()
 		luci.http.write("No data found")
 		luci.http.write("\n")
 	end
+end
+
+function act_status()
+  local e={}
+  e.running=luci.sys.call("pgrep mwan3dns >/dev/null")==0
+  luci.http.prepare_content("application/json")
+  luci.http.write_json(e)
 end

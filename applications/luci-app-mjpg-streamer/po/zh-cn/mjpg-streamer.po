@@ -19,7 +19,6 @@ msgstr "允许环形缓冲区最多超过这个数值"
 msgid "Ask for username and password on connect"
 msgstr "连接时询问用户名和密码"
 
-#: applications/luci-app-mjpg-streamer/luasrc/model/cbi/mjpg-streamer.lua:95
 msgid "MJPG-streamer"
 msgstr "视频监控"
 
